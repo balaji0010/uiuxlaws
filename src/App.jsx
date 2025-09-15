@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>UI/UX Laws & Color Psychology</h1>
+      <h1>UI/UX Laws</h1>
       <div className="law-grid">
         {lawsData.map((law) => (
           <LawCard key={law.id} law={law} onClick={handleCardClick} />

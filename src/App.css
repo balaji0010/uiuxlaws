@@ -28,7 +28,8 @@ body {
 
   .law-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+        grid-template-columns: repeat(3, 1fr); /* always 3 per row */
     gap: 2rem;
   }
 }
