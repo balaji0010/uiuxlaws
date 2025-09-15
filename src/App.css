@@ -1,0 +1,185 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f7f8fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+
+  .law-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+}
+
+
+.law-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+}
+
+.law-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.law-detail {
+  background: #fff;
+  border-radius: 12px;
+  width: 888px;
+  padding: 2.5rem;
+  max-width: 90%;
+  max-height: 85vh;   /* limit modal height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;   /* ensure no spill */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.law-detail h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+}
+
+.law-detail img {
+  width: 100%;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #f44336;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #d32f2f;
+}
+
+/* Make only the content scrollable */
+.law-detail-content {
+  padding: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Paragraphs */
+.law-detail-content p {
+  margin: 12px 0 18px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Section Headings */
+.law-detail-content h4 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a73e8;   /* Google blue shade for emphasis */
+  border-left: 4px solid #1a73e8;
+  padding-left: 8px;
+}
+
+/* Lists */
+.law-detail-content ul {
+  margin: 0 0 16px 20px;  /* indent nicely */
+  padding: 0;
+}
+
+.law-detail-content ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+  list-style-type: disc;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
