@@ -67,5 +67,40 @@ export const lawsData = [
     "Apple’s product pages focus on one or two clear actions."
   ],
   image: "/assets/images/hicks.png"
+},
+{
+  id: "millers-law",
+  title: "Miller’s Law (7±2 Rule)",
+  short: "Humans can only hold 5–9 items in working memory at once.",
+  explanation: "Miller’s Law states that the average person can keep about 7±2 items in their working memory. In UI/UX design, this means avoiding overwhelming users with too many options at once, and instead using chunking, grouping, and progressive disclosure to aid comprehension.",
+  examples: [
+    "Limit navigation menus to around 7 items.",
+    "Break long forms into multiple smaller steps.",
+    "Use tabs or accordions to group related content."
+  ],
+  realworld: [
+    "Phone numbers are grouped into chunks (e.g., 123-456-7890).",
+    "E-learning platforms divide lessons into modules.",
+    "E-commerce sites group products into categories instead of listing hundreds at once."
+  ],
+  image: "/assets/images/millers.png"
+},
+{
+  id: "jakobs-law",
+  title: "Jakob’s Law",
+  short: "Users prefer your site to work like the ones they already know.",
+  explanation: "Jakob’s Law states that users spend most of their time on other sites, so they expect your site to function similarly. Familiar design patterns reduce the learning curve, increase usability, and build trust, while overly unique interfaces can confuse or frustrate users.",
+  examples: [
+    "Use a familiar shopping cart icon for e-commerce checkout.",
+    "Keep the navigation bar at the top or side where users expect it.",
+    "Follow standard form field patterns (labels above inputs, buttons at the bottom)."
+  ],
+  realworld: [
+    "Most e-commerce sites use a cart icon at the top-right for checkout.",
+    "Social media apps use a bottom navigation bar for Home, Search, and Profile.",
+    "Login forms almost always have username/email, password, and a clear submit button."
+  ],
+  image: "/assets/images/jacob.jpg"
 }
+
 ];
