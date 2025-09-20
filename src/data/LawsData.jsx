@@ -101,6 +101,95 @@ export const lawsData = [
     "Login forms almost always have username/email, password, and a clear submit button."
   ],
   image: "/assets/images/jacob.jpg"
-}
+},
+{
+  id: "law-of-pragnanz",
+  title: "Law of Prägnanz (Simplicity)",
+  short: "People perceive complex visuals in the simplest way possible.",
+  explanation: "The Law of Prägnanz states that when people see a complex arrangement, they naturally interpret it as the simplest form. Simplicity reduces cognitive effort and helps users quickly understand layouts, icons, and navigation without confusion.",
+  examples: [
+    "Using simple icons instead of overly detailed ones.",
+    "Clear and minimal layouts instead of cluttered designs.",
+    "Simplifying charts or graphs to highlight only key insights."
+  ],
+  realworld: [
+    "The Google homepage is minimal with just a logo and search bar.",
+    "Apple’s product pages use clean layouts with lots of white space.",
+    "Modern app icons use flat design rather than complex 3D effects."
+  ],
+  image: "/assets/images/pragnanz.jpg"
+},
+{
+  id: "serial-position-effect",
+  title: "Serial Position Effect",
+  short: "Users remember the first and last items best in a sequence.",
+  explanation: "The Serial Position Effect explains that people recall the first (primacy) and last (recency) items in a list more easily than the middle ones. In UI/UX, placing the most important actions or information at the start or end of a sequence improves retention and usability.",
+  examples: [
+    "Putting critical actions like 'Save' or 'Checkout' at the start or end of menus.",
+    "Highlighting the first and last items in onboarding steps.",
+    "Positioning important links at the top or bottom of navigation menus."
+  ],
+  realworld: [
+    "Amazon places key options like 'Cart' and 'Sign In' at the edges of the navigation bar.",
+    "Mobile apps often place the 'Home' button at the far left and 'Profile/Settings' at the far right in bottom navigation.",
+    "Presentation slides start with a strong intro and end with a clear call-to-action."
+  ],
+  image: "/assets/images/serial.png"
+},
+{
+  id: "teslers-law",
+  title: "Tesler’s Law (Law of Conservation of Complexity)",
+  short: "Every application has inherent complexity that must be handled by either the system or the user.",
+  explanation: "Tesler’s Law states that complexity in a system is unavoidable; it cannot be removed, only shifted. Good UX design minimizes the burden on users by handling complexity behind the scenes, allowing users to focus on their goals with less effort.",
+  examples: [
+    "E-commerce platforms automatically calculating tax and shipping costs instead of asking users to do it.",
+    "Form auto-completion and suggestions that reduce user input effort.",
+    "Photo editing apps providing 'auto-enhance' while still allowing manual adjustments."
+  ],
+  realworld: [
+    "Google hides algorithmic complexity but delivers simple search results instantly.",
+    "Apple devices abstract hardware/software complexity, giving users a clean and intuitive experience.",
+    "TurboTax manages tax complexity by asking users simple questions and handling the calculations internally."
+  ],
+  image: "/assets/images/teslers.png"
+},
+{
+  id: "pareto-principle",
+  title: "Pareto Principle (80/20 Rule)",
+  short: "80% of effects come from 20% of causes.",
+  explanation: "The Pareto Principle states that a small number of causes are often responsible for the majority of results. In UX, this means focusing on the core 20% of features or actions that deliver 80% of user value, improving efficiency and satisfaction.",
+  examples: [
+    "Prioritizing the top-used features in an app instead of overwhelming users with all options.",
+    "Optimizing the checkout flow in e-commerce since it drives most revenue.",
+    "Focusing bug-fixing efforts on issues that impact most users."
+  ],
+  realworld: [
+    "Microsoft discovered that fixing 20% of the most-reported bugs eliminated 80% of related errors.",
+    "Amazon emphasizes product search and checkout — the critical 20% of user actions.",
+    "Instagram focuses on posting, scrolling, and liking — not every possible feature."
+  ],
+  image: "/assets/images/pareto.png"
+},
+{
+  id: "postels-law",
+  title: "Postel’s Law (Robustness Principle)",
+  short: "Be liberal in what you accept, and conservative in what you send.",
+  explanation: "Postel’s Law encourages systems to handle varied inputs gracefully while keeping their own outputs clean and predictable. In UX, this means designing flexible input handling for users (tolerating minor errors, formats, or variations), while ensuring the system communicates back consistently and clearly.",
+  examples: [
+    "Accepting multiple date formats in a form input (e.g., 01/01/25, Jan 1 2025).",
+    "Tolerating typos in search queries and showing relevant results.",
+    "Auto-correcting phone number formatting instead of rejecting it."
+  ],
+  realworld: [
+    "Google Search handles spelling mistakes like 'gooogle' and still returns relevant results.",
+    "Modern browsers tolerate small HTML/CSS errors and still render pages.",
+    "Email apps accept different formats but always display emails consistently."
+  ],
+  image: "/assets/images/postel.jpg"
+},
+
+
+
+
 
 ];
