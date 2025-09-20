@@ -187,6 +187,60 @@ export const lawsData = [
   ],
   image: "/assets/images/postel.jpg"
 },
+{
+  id: "von-restorff-effect",
+  title: "Von Restorff Effect (Isolation Effect)",
+  short: "The item that stands out is more likely to be remembered.",
+  explanation: "The Von Restorff Effect states that when multiple similar items are presented, the one that differs from the rest is more likely to be noticed and remembered. In UI/UX, this principle is used to highlight calls-to-action, errors, or critical information by making them visually distinct.",
+  examples: [
+    "Using a bright color for the primary CTA button while keeping secondary buttons muted.",
+    "Highlighting the current active menu item in a navigation bar.",
+    "Displaying error messages in red to draw immediate attention."
+  ],
+  realworld: [
+    "Spotify highlights its premium subscription button in a distinct color compared to other options.",
+    "Amazon emphasizes the 'Buy Now' or 'Add to Cart' button with a standout style.",
+    "Notification badges (like red circles with numbers) immediately stand out in apps."
+  ],
+  image: "/assets/images/vonrestorff.png"
+},
+{
+  id: "doherty-threshold",
+  title: "Doherty Threshold",
+  short: "Productivity soars when system response time is under 400ms.",
+  explanation: "The Doherty Threshold highlights that users remain engaged and productive when interactions occur in under 400 milliseconds. Systems that respond within this limit keep users in a state of flow, while slower responses cause frustration, distraction, and reduced satisfaction.",
+  examples: [
+    "Keeping button clicks responsive with immediate visual feedback (loading spinner, animation).",
+    "Lazy-loading images and content so pages feel fast.",
+    "Providing predictive search results as users type."
+  ],
+  realworld: [
+    "Google Search delivers results almost instantly to maintain engagement.",
+    "Twitter shows a skeleton loader while fetching tweets, keeping users occupied.",
+    "Instagram loads images progressively so users don’t feel delayed."
+  ],
+  image: "/assets/images/doherty.jpg"
+},
+{
+  id: "aesthetic-usability-effect",
+  title: "Aesthetic-Usability Effect",
+  short: "Users perceive aesthetically pleasing designs as more usable.",
+  explanation: "The Aesthetic-Usability Effect suggests that people are more tolerant of minor usability issues when an interface looks visually appealing. Attractive designs create positive first impressions, build trust, and make users feel that the product is easier to use, even if the functionality is the same.",
+  examples: [
+    "Using a clean, modern UI with consistent typography and spacing.",
+    "Designing error messages with friendly visuals that reduce frustration.",
+    "Applying visually appealing dashboards that feel easier to navigate."
+  ],
+  realworld: [
+    "Apple products are perceived as more intuitive partly due to their sleek design.",
+    "Airbnb’s simple, modern layout makes complex booking flows feel effortless.",
+    "Dribbble and Behance showcase designs where beauty enhances perceived usability."
+  ],
+  image: "/assets/images/aesthetic.jpg"
+}
+
+
+
 
 
 
